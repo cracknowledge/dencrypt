@@ -1,14 +1,15 @@
+/************** Additive Cipher **************/
+//Encryption : c = (p+k) mod n
+//Decryption : p = (c-k) mod n
+//n = alphabet length
+/*********************************************/
+
 #include "additive.h"
 #include <iostream>
 #include <string>
 #include <math.h>
 
 using namespace std;
-
-/************** Additive Cipher **************/
-//Encryption : c = (p+k) mod n
-//Decryption : p = (c-k) mod n
-//n = alphabet length
 
 //This function returned position of the character on alphabet.
 static short Additive::findPosition(char p,short alphabetLength)
